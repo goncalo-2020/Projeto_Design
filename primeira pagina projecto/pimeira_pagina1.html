@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/4078748f8e.js" crossorigin="anonymous"></script>
+  <title>Landing page with two column layout</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="logo.svg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Features <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Team</a>
+        <a class="nav-item nav-link" href="#">Sign In</a>
+        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+      </div>
+    </div>
+  </nav>
+<div class="body_margin">  
+  <div class="container_grid w-100">
+    <div class="item item--1">
+      <h4>All your files in one secure location, accessible anywhere.</h4>
+      <h6>Fylo stores your most important files in one secure location. 
+      Access them wherever you need, share and collaborate with friends,familyy, and co-workers. 
+      </h6>
+      <input placeholder="Introduza o seu email"> <button class="p-1 mb-2 bg-primary text-white " >Get Started</button>
+    </div>
+    <div class="item item--2"><img src="illustration-1.svg" width="300"></div>
+  </div>
+
+<div><img src="bg-curve-desktop.svg" class="w-100" ></div> 
+
+<div class="container_grid fundo w-100">
+  <div class="item item--3">
+    <h4>Stay productive, wherever you are</h4>
+    <h6>Never let location be an issue when accessing your files. Fylo has you 
+    covered for all of your file storage needs.
+
+    Securely share files and folders with friends, family and colleagues for 
+    live collaboration. No email attachments required!</h6>
+  </div>
+  <div class="item item--4"><img src="illustration-2.svg" width="300"></div>
+</div>
+
+<h6 class="text-success"><ins>See how Fylo works</ins><img src="icon-arrow.svg" width="30"></h6>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><img src="icon-quotes.svg"></h5>
+    <p class="card-text">Fylo has improved our team productivity by an order of magnitude. Since 
+      making the switch our team has become a well-oiled collaboration machine.</p>
+    <a ><img src="avatar-testimonial.jpg" class="rounded-circle" alt="Cinque Terre" width="40">Kyle Burton</a>
+    <p >Founder & CEO, Huddle;</p>
+  </div>
+</div>
+</div>
+
+<br>
+
+<footer>
+  <div class=" row px-0">
+      <div class="col-lg-6 text-left p-5">
+          <h3> Get early access today </h3>
+          <p> It only takes a minute to sign up and our free starter tier is extremely generous. 
+              If you have any questions, our support team would be happy to help you.</p>
+        </div>
+        <div class="col-lg-6 text-center p-5">
+            <div>  <input placeholder="Introduza o seu email"> </div>
+            <p>Please check your email</p>
+            <div class="p-1">  <button class="p-1 mb-2 bg-primary text-white ">Get Started For Free</button></div>
+        </div>  
+  </div>
+</footer>
+
+<footer>
+  <div class="row px-0 fundo_escuro">
+    
+    <div class="col-lg-3 text-left p-5"> 
+      <div class="logo_footer"> <img src="logo.svg" ></div>
+      <div><img src="icon-phone.svg"> +1-543-123-4567</div>
+      <div><img src="icon-email.svg">  example@fylo.com</div>
+    </div>
+
+    <div class="col-lg-3 text-left p-5"> 
+      <div>About Us</div>
+      <div>Jobs</div>
+      <div>Press</div>
+      <div>Blog</div>
+    </div>
+
+    <div class="col-lg-3 text-left p-5"> 
+      <div>Contact Us</div>
+      <div>Terms</div>
+      <div>Privacy</div>
+    </div>
+
+    <div class="col-lg-3 p-5 imagens_footer" >
+      <div class="social-media">
+        <a href="#">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+</footer>
+
+  <style>
+    .container_grid{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns:  1fr 1fr;
+
+        grid-gap: 2px;
+
+        grid-row-gap: 2px;
+        grid-column-gap: 2px;
+
+        width: 10px;
+        margin: 2px auto;
+        background-color:none;
+    }
+    .fundo{
+      background-color: hsl(240, 75%, 98%);
+    }
+    .card{
+      background-color: white;
+      margin: 1px black;
+    }
+    
+    .item--1{
+      background-color: none;
+      grid-row-start:1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    .item--2{
+      background-color: none;
+      grid-row-start:1;
+      grid-row-end: 2;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    .item--3{
+      background-color: none;
+      grid-row-start:1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    .item--4{
+      background-color: none;
+      grid-row-start:1;
+      grid-row-end: 2;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    .box{
+      margin: 1px black;
+    width: 300px;
+    height: 150px;
+    background:white;
+    color: black;
+    }
+    footer {
+      color: white;
+      background-color:hsl(238, 22%, 44%);
+    }
+    .fundo_escuro{
+      background-color:hsl(243, 87%, 12%);
+    }
+    .logo_footer{
+      filter: brightness(2) invert(100%);
+    }
+    .social-media a{
+      padding: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+    .social-media a:hover{
+      color: grey;
+    }
+    .body_margin{
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+               
+  </style>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</body>
+</html>
